@@ -11,12 +11,12 @@ function Highlight({ report }) {
       type: "confirmed",
     },
     {
-      title: "Khỏi",
+      title: "Số ca Khỏi",
       count: data.Recovered,
       type: "recovered",
     },
     {
-      title: "Tử vong",
+      title: "Số ca Tử vong",
       count: data.Deaths,
       type: "deaths",
     },
