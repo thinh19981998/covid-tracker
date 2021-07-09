@@ -40,7 +40,7 @@ const initOptions = {
   ],
 };
 
-export default function HighMaps({ mapData }) {
+const HighMaps = ({ mapData }) => {
   const [options, setOptions] = useState({});
   const chartRef = useRef(null);
   const [configLoaded, setConfigLoaded] = useState(false);
@@ -83,4 +83,6 @@ export default function HighMaps({ mapData }) {
       ref={chartRef}
     />
   );
-}
+};
+
+export default React.memo(HighMaps);
